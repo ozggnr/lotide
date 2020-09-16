@@ -19,5 +19,4 @@ const countLetters = function(letter) {
   return result;
 }
 
-// console.log(countLetters("lighthouse in the house"))
-const resultFinal = countLetters("lighthouse in the house")
+
