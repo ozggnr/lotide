@@ -3,9 +3,7 @@ const letterPositions = function(sentence) {
   let list = [];
   // logic to update results here
   for (let i = 0; i < sentence.length; i++) { //take each letter from given string
-    // console.log(sentence[i])
     if (sentence[i] !== " ") {//skip the spaces
-      // console.log(sentence[i])
       if (result[sentence[i]]){
         result[sentence[i]].push(i);
       }
@@ -20,7 +18,6 @@ const letterPositions = function(sentence) {
 };
 console.log(letterPositions("hello"))
 const eqArrays = function(arr1, arr2) {
-  console.log(arr1)
   //first and foremost the length of the arrays should be equal
   if (arr1.length === arr2.length) {
     for (let i = 0; i < arr1.length; i++) {
@@ -35,7 +32,6 @@ const eqArrays = function(arr1, arr2) {
       return false;
   }
 }
-
 const assertArraysEqual = function (left, right) {
   if (eqArrays(left, right)) { //if the function eqArrays return true, print out as "Assertion Passed" otherwise it will show "Assertion failed"
     console.log(`${String.fromCodePoint(0x1F60C)}` + "Assertion Passed: " + `${left}` + " === " + `${right}`);
