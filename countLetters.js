@@ -1,10 +1,10 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`${String.fromCodePoint(0x1F60C)}` + "Assertion Passed: " + `${actual}` + " === " + `${expected}`);
-  } else {
-    console.log(`${String.fromCharCode(0x26D4)}` + "Assertion failed: " + `${actual} `+ " !== " + `${expected}`);
-  }
-};
+// const assertEqual = function(actual, expected) {
+//   if (actual === expected) {
+//     console.log(`${String.fromCodePoint(0x1F60C)}` + "Assertion Passed: " + `${actual}` + " === " + `${expected}`);
+//   } else {
+//     console.log(`${String.fromCharCode(0x26D4)}` + "Assertion failed: " + `${actual} `+ " !== " + `${expected}`);
+//   }
+// };
 const countLetters = function(letter) {
   let result = {};
   for (obj of letter) { //take each letter from given string
@@ -19,5 +19,5 @@ const countLetters = function(letter) {
   return result;
 }
 
-// console.log(countLetters("lighthouse in the house"))
-const resultFinal = countLetters("lighthouse in the house")
+console.log(countLetters("lighthouse in the house"))
+// const resultFinal = countLetters("lighthouse in the house")
