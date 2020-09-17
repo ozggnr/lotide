@@ -5,38 +5,35 @@ const assertEqual = function(actual, expected) {
     console.log(`${String.fromCharCode(0x26D4)}` + "Assertion failed: " + `${actual} `+ " !== " + `${expected}`);
   }
 };
-const countOnly = function(allItems, itemsToCount) {
-  const results = {};
-
-  for (const item of allItems) {
-    if (itemsToCount[item]) { 
-      if (results[item]) {
-        console.log(results[item])
-        results[item] += 1;
-      } else {
-        results[item] = 1;
-      }
-    }
-  }
-
-  return results;
-}
-// // allItems: an array of strings that we need to look through
-// // itemsToCount: an object specifying what to count
 // const countOnly = function(allItems, itemsToCount) {
-//   let obj = {};
-//   count = 1; //it will count the strings found in the input array, if it exist
-//   for (let item in itemsToCount) {
-//     if (itemsToCount[item] === itemsToCount.hasOwnProperty(item)) {
-//       //if item is inside the allItems array, it increase the count by one;
-//       if (allItems.includes(item)) {
-//         obj[item] = count;
-//         count++;
+//   const results = {};
+//   for (const item of allItems) {
+//     if (itemsToCount[item]) { 
+//       if (results[item]) {
+//         results[item] += 1;
+//       } else {
+//         results[item] = 1;
 //       }
 //     }
 //   }
-//   return obj;
+//   return results;
 // }
+// allItems: an array of strings that we need to look through
+// itemsToCount: an object specifying what to count
+const countOnly = function(allItems, itemsToCount) {
+  let obj = {};
+  count = 1; //it will count the strings found in the input array, if it exist
+  for (let item in itemsToCount) {
+    if (itemsToCount[item] === itemsToCount.hasOwnProperty(item)) {
+      //if item is inside the allItems array, it increase the count by one;
+      if (allItems.includes(item)) {
+        obj[item] = count;
+        count++;
+      }
+    }
+  }
+  return obj;
+}
 
 
 const firstNames = [
