@@ -35,7 +35,6 @@ const countOnly = function(allItems, itemsToCount) {
   return obj;
 }
 
-
 const firstNames = [
   "Karl",
   "Salima",
