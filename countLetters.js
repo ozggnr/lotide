@@ -18,10 +18,3 @@ const countLetters = function(letter) {
   }
   return result;
 }
-
-<<<<<<< HEAD
-console.log(countLetters("lighthouse in the house"))
-// const resultFinal = countLetters("lighthouse in the house")
-=======
-
->>>>>>> c75616e0b71ca1bb92a29c12413b10920dd2fe2c
