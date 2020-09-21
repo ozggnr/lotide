@@ -1,8 +1,11 @@
-const tail = require("../tail.js");
-const assertEqual = require("../assertEqual.js");
+const assert = require('chai').assert;
+const tail  = require('../tail');
 const words = ["Yo Yo", "Lighthouse", "Labs"];
-tail(words);
-console.log(assertEqual(words.length, 3)); // original array should still have 3 elements!
-
-console.log(assertEqual(tail(words).length,2));
-// console.log(tail(["Hello", "Lighthouse", "Labs"]))
+describe("tail", () => {
+  it("returns 3 for 'words.length'", () => {
+    assert.deepEqual(words.length, 3);
+  });
+  it("returns 2 for [1,2,3]", () => {
+    assert.deepEqual(tail(words).length, 2); 
+  });
+});
